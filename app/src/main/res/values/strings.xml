@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Simon</string>
+    <string name="Start">Start Game</string>
+    <string name="Difficulty">Difficulty</string>
+    <string name="HighScore">High Scores</string>
+    <string name="Simon">Simon</string>
+    <string name="Easy">Easy</string>
+    <string name="Medium">Medium</string>
+    <string name="Hard">Hard</string>
+    <string name="LudacrisSpeed">LUDACRIS SPEED</string>
+</resources>

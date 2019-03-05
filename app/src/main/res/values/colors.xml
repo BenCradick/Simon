@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorBackgroundBlack">#000000</color>
+    <color name="colorSimonRed">#dd4b3e</color>
+    <color name="colorSimonBlue">#4b3edd</color>
+    <color name="colorSimonYellow">#ffea37</color>
+    <color name="colorSimonGreen">#3edd4b</color>
+</resources>
