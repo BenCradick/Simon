@@ -29,26 +29,30 @@
                 android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginBottom="30dp"
                 android:paddingTop="10dp"
                 android:id="@+id/textView"/>
 
         <TextView style="@style/homeOptionsStyle"
-                  android:text="@string/HighScore"
+                  android:text="@string/HighScores"
                   android:textColor="@color/colorTextWhite"
                   android:id="@+id/highScoreButton"/>
         <TextView style="@style/homeOptionsStyle"
                   android:text="@string/Easy"
+                  android:id="@+id/easyButton"
                   android:textColor="@color/colorSimonRed"/>
         <TextView style="@style/homeOptionsStyle"
+                  android:id="@+id/mediumButton"
                   android:text="@string/Medium"
                   android:textColor="@color/colorSimonYellow"/>
 
         <TextView style="@style/homeOptionsStyle"
                 android:text="@string/Hard"
+                android:id="@+id/hardButton"
                 android:textColor="@color/colorSimonGreen"/>
         <TextView style="@style/homeOptionsStyle"
+                  android:id="@+id/ludacrisButton"
                   android:text="@string/LudacrisSpeed"
                   android:textColor="@color/colorSimonBlue"/>
 

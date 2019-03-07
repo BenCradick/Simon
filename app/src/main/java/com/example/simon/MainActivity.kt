@@ -1,29 +1,48 @@
 package com.example.simon
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import kotlinx.android.synthetic.main.activity_main.view.*
+import android.view.View
+import android.widget.TextView
+
+//following the android documentation example, i don't know what this does other than drop the
+// package name in the global namespace, it's used when initiating next funciton but it doesn't really provide me
+// with a reason why they're doing what they're doing
+const val EXTRA_MESSAGE = "com.example.simon"
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var buttonHard : TextView
+    lateinit var buttonEasy : TextView
+    lateinit var buttonMedium : TextView
+    lateinit var buttonLudacris : TextView
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val difficultySpinner : Spinner = findViewById(R.id.difficulty_spinner)
-        ArrayAdapter.createFromResource(
-            this,
-            R.array.difficulties_array,
-            android.R.layout.simple_spinner_item
-        ).also { adapter ->
-            // Specify the layout to use when the list of choices appears
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            difficultySpinner.adapter = adapter
-        }
+        buttonHard = findViewById(R.id.hardButton)
+        buttonEasy = findViewById(R.id.easyButton)
+        buttonMedium = findViewById(R.id.mediumButton)
+        buttonLudacris = findViewById(R.id.ludacrisButton)
 
+        buttonHard.setOnClickListener{ sendMessage(buttonHard) }
+        buttonEasy.setOnClickListener { sendMessage(buttonEasy) }
+        buttonMedium.setOnClickListener { sendMessage(buttonMedium) }
+        buttonLudacris.setOnClickListener { sendMessage(buttonLudacris) }
+
+
+
+
+
+    }
+    fun sendMessage(textView: TextView){
+        val intent = Intent(this@MainActivity, GameActivity::class.java).apply{
+            putExtra(EXTRA_MESSAGE, textView.text.toString())
+        }
+        startActivity(intent)
     }
 
 

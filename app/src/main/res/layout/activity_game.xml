@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/gameHorizontelLayout">
+            <LinearLayout
+                    style="@style/gameLayoutStyle"
+                    android:id="@+id/gameVerticalLayoutTop"
+            >
+                <Button
+                        style="@style/gameButtonStyle"
+                        android:id="@+id/greenButton"
+                        android:background="@color/colorSimonGreen"/>
+                <Button
+                        style="@style/gameButtonStyle"
+                        android:id="@+id/redButton"
+                        android:background="@color/colorSimonRed"/>
+            </LinearLayout>
+            <LinearLayout
+                    style="@style/gameLayoutStyle"
+                    android:id="@+id/gameVerticalLayoutBotom">
+                <Button
+                        style="@style/gameButtonStyle"
+                        android:id="@+id/blueButton"
+                        android:background="@color/colorSimonBlue"/>
+                <Button
+                        style="@style/gameButtonStyle"
+                        android:id="@+id/yellowButton"
+                        android:background="@color/colorSimonYellow"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:clipChildren="true"
+                android:layout_gravity="center"
+                android:background="@drawable/circle">
+
+
+            <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/Simon"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/federalescort"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:gravity="start"
+                        android:text="@string/HighScore"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorTextWhite"
+
+                        android:fontFamily="@font/federalescort"/>
+                <TextView
+                        android:id="@+id/highScoreTag"
+                        android:layout_marginTop="5dp"
+                        android:paddingTop="4dp"
+                        android:layout_gravity="end"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:gravity="start"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="12sp"
+                        android:text=""
+                        android:fontFamily="@font/federalescort"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="horizontal">
+                <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:gravity="start"
+                        android:text="@string/Score"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorTextWhite"
+                        android:fontFamily="@font/federalescort"/>
+                <TextView
+                        android:id="@+id/currentScoreTag"
+                        android:layout_marginTop="5dp"
+
+                        android:paddingTop="4dp"
+                        android:layout_gravity="end"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:gravity="start"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="12sp"
+                        android:text=""
+                        android:fontFamily="@font/federalescort"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
