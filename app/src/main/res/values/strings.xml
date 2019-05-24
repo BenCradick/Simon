@@ -10,4 +10,7 @@
     <string name="Medium">Medium</string>
     <string name="Hard">Hard</string>
     <string name="LudacrisSpeed">LUDACRIS SPEED</string>
+    <string name="GameOver">Game Over</string>
+    <string name="PlayAgain">Play Again</string>
+    <string name="MainMenu">Main Menu</string>
 </resources>

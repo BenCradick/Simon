@@ -9,4 +9,8 @@
     <color name="colorSimonBlue">#4b3edd</color>
     <color name="colorSimonYellow">#ffea37</color>
     <color name="colorSimonGreen">#3edd4b</color>
+    <color name="colorSimonRedSelected">#FF9D94</color>
+    <color name="colorSimonBlueSelected">#9D94FF</color>
+    <color name="colorSimonYellowSelected">#CCBB2C</color>
+    <color name="colorSimonGreenSelected">#94FF9D</color>
 </resources>

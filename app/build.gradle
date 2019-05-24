@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "com.example.android.roomwordssample"
-        minSdkVersion 20
+        minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -20,7 +21,7 @@ android {
         }
     }
 }
-kapt{
+kapt {
     generateStubs = true
 }
 repositories {
@@ -36,6 +37,8 @@ dependencies {
     // Dependencies for working with Architecture components
     // You'll probably have to update the version numbers in guild.gradle (Project)
     implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
     kapt "android.arch.persistence.room:compiler:$rootProject.roomVersion"
     androidTestImplementation "android.arch.persistence.room:testing:$rootProject.roomVersion"
 
@@ -47,7 +50,7 @@ dependencies {
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation "android.arch.core:core-testing:$rootProject.archLifecycleVersion"
-    androidTestImplementation ('com.android.support.test.espresso:espresso-core:3.0.1', {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 

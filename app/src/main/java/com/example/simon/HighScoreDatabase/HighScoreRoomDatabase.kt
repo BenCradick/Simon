@@ -58,7 +58,7 @@ abstract class HighScoreRoomDatabase : RoomDatabase(){
         }
         fun populateDatabase(highScoreDao : HighScoreDao){
             if(highScoreDao.getAllScores().isEmpty()){
-                val s = HighScoreDataModel(50)
+                val s = HighScoreDataModel(0)
                 highScoreDao.insert(s)
             }
         }

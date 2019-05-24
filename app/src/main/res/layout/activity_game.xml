@@ -2,15 +2,24 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/activity_game"
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent">
 
-    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/frame">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:name="com.example.simon.GameOverFragment"
+                android:id="@+id/gameOverFragment"
+                android:layout_gravity="center"
+
+        />
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/gameHorizontelLayout">
+                android:id="@+id/gameHorizontalLayout">
             <LinearLayout
                     style="@style/gameLayoutStyle"
                     android:id="@+id/gameVerticalLayoutTop"
@@ -43,6 +52,7 @@
                 android:layout_height="190dp"
                 android:clipChildren="true"
                 android:layout_gravity="center"
+                android:id="@+id/scoreBoard"
                 android:background="@drawable/circle">
 
 

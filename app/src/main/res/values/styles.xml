@@ -28,5 +28,31 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_width">match_parent</item>
     </style>
+    <style name="fragmentButtons">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">135dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:fontFamily">@font/federalescort</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+    </style>
+    <style name="fragmentScores">
+        <item name="android:fontFamily">@font/federalescort</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+    <style name="fragmentScoresHead" parent="fragmentScores">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    <style name="fragmentScoresBody" parent="fragmentScores">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
 
 </resources>

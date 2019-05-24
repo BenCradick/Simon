@@ -9,7 +9,7 @@ import android.widget.TextView
 //following the android documentation example, i don't know what this does other than drop the
 // package name in the global namespace, it's used when initiating next funciton but it doesn't really provide me
 // with a reason why they're doing what they're doing
-const val EXTRA_MESSAGE = "com.example.simon"
+const val EXTRA_MESSAGE = "difficulty"
 
 class MainActivity : AppCompatActivity() {
 
